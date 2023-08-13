@@ -26,7 +26,7 @@ docker run --name app-1-c -p 3123:3123 app-1 # Container's name is important sin
 docker run --name app-2-c -p 3001:3001 app-2
 ```
 
-> [web-app-2/server.js](./web-app-2/server.js#16) uses URL `app-1-c` to fetch data from container. Docker network resolves the name
+> [web-app-2/server.js](./web-app-2/server.js#L16) uses URL `app-1-c` to fetch data from container. Docker network resolves the name
 
 3. Create network for containers:
 ```sh
